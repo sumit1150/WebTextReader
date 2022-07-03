@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Website Reader- URL:https://blog.truecaller.com/2018/01/22/life-as-an-android-engineer/"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#E6961E"
+        android:textSize="18dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/webText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Web Content:"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:text="10th Character:"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                />
+
+
+                <TextView
+                    android:id="@+id/tenth_Char"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="10th Charactor"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAlignment="viewStart"
+                    android:layout_marginLeft="15dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Every 10th Character:"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                />
+            <ScrollView
+                android:layout_width="280dp"
+                android:layout_height="200dp">
+                <TextView
+                    android:id="@+id/every_tenth_char"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Every 10th Charactor"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAlignment="viewStart"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:text="Word Count:"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+            <ScrollView
+                android:layout_width="280dp"
+                android:layout_height="250dp">
+
+                    <TextView
+                        android:id="@+id/word_count"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Word Count"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textAlignment="viewStart" />
+
+            </ScrollView>
+        </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/execute"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Execute"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
